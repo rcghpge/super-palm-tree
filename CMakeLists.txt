@@ -7,3 +7,4 @@ set(CMAKE_CXX_STANDARD 26)
 
 add_executable(yee test/yee.c)
 add_executable(yawp test/yawp.cpp)
+add_executable(spinner c/spinner.c)
