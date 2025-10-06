@@ -54,7 +54,7 @@ dkms.conf
 # debug information files
 *.dwo
 
-# Byte-compiled / optimized / DLL files
+# Byte-compiled/optimized/DLL files
 __pycache__/
 *.py[codz]
 *$py.class
@@ -62,7 +62,11 @@ __pycache__/
 # C extensions
 *.so
 
-# Distribution / packaging
+# Builds, outputs, and artifacts
+build/
+out/
+
+# Distribution/packaging
 .Python
 build/
 develop-eggs/
@@ -92,7 +96,7 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit test/coverage reports
 htmlcov/
 .tox/
 .nox/

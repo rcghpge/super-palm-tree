@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 
 # Run binary builds:
 # cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+# cmake --build build -j
 
 #project(SuperPalmTree C CXX)
 

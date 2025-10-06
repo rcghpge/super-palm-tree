@@ -1,5 +1,4 @@
 // c/spinner.c
-#define _POSIX_C_SOURCE 199309L
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -10,12 +9,11 @@
   static void sleep_ms(unsigned int ms) { Sleep(ms); }
 #else
   #include <time.h>
-  #include <unistd.h>
   static void sleep_ms(unsigned int ms) {
     struct timespec ts;
     ts.tv_sec  = ms / 1000u;
     ts.tv_nsec = (long)(ms % 1000u) * 1000000L;
-    (void)nanosleep(&ts, NULL);
+    nanosleep(&ts, NULL);
   }
 #endif
 
@@ -28,16 +26,16 @@ int main(void) {
 
   // spin for ~3 seconds (30 frames at 100 ms each)
   for (int tick = 0; tick < 30; ++tick) {
-    printf("%c\b", frames[frame]);
+    printf("%c\b", frames[frame]);      // print spinner frame, then backspace
     fflush(stdout);
     frame = (frame + 1) % (sizeof(frames) - 1);
     sleep_ms(100);
   }
 
-#ifndef _WIN32
-  printf("✓ Done!\n");
-#else
+#ifdef _WIN32
   printf("done!\n");
+#else
+  printf("✓ Done!\n");
 #endif
 
   return 0;
