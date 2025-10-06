@@ -6,6 +6,6 @@ GitHub recommended the repository name. SPT repository 🌴
 
 ---
 
-This repository runs on Mojo nightly which is known to have a lot of breaking changes. 
+This repository runs on Mojo nightly releases which is known to have a lot of breaking changes. 
 
 ---
