@@ -9,3 +9,7 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 *.py linguist-language=Python
 *.mojo linguist-language=Mojo
 *.rs linguist-language=Rust
+
+# DSL
+*.cu linguist-language=CUDA
+*.cuh linguist-language=CUDA
