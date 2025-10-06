@@ -8,9 +8,9 @@ version = "0.1.0"
 [tasks]
 
 [dependencies]
-mojo = ">=25.5.0,<26"
-mojo-compiler = ">=25.5.0,<26"
 python = ">=3.13.7,<3.14"
-pandas = ">=2.3.2,<3"
+pandas = ">=2.3.3,<3"
 scikit-learn = ">=1.7.2,<2"
 numpy = ">=2.3.3,<3"
+mojo = ">=0.25.7.0.dev2025100605,<0.26"
+mojo-compiler = ">=0.25.7.0.dev2025100605,<0.26"
