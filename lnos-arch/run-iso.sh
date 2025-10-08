@@ -5,8 +5,8 @@ set -euo pipefail
 : "${CPUS:=$(nproc)}"
 : "${DISK_SIZE:=30G}"
 : "${SECUREBOOT:=0}"
-REPO_NAME="lnos-arch"
-GITHUB_REPO="rcghpge/lnos"
+REPO_NAME="lnos"
+GITHUB_REPO="uta-lug-nuts/lnos"
 CWD="$(pwd)"
 if [[ "$(basename "$CWD")" == "vm" && -d "$(dirname "$CWD")/$REPO_NAME" ]]; then
   VM_DIR="$CWD"
