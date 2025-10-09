@@ -1,4 +1,4 @@
-# Dockfile for LnOS Arch 
+# Dockerfile for LnOS Arch 
 # wip build - docker build -t lnos-builder .
 FROM archlinux:latest
 
