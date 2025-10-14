@@ -14,6 +14,8 @@ GitHub recommended the repository name. SPT repository 🌴
 
 ---
 
-This repository runs on Mojo nightly releases which is known to have a lot of breaking changes. 
+Runs on:
+- Mojo nightly releases
+- Rust stable releases 
 
 ---
