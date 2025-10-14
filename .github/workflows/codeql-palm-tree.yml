@@ -26,10 +26,16 @@ jobs:
             build-mode: manual
           - language: python
             build-mode: none
+          - language: rust
+            build-mode: manual
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Rust env (stable)
+        if: matrix.language == 'rust'
+        uses: dtolnay/rust-toolchain@stable
 
       - name: Set up compilers
         if: matrix.language == 'c-cpp'
@@ -56,6 +62,20 @@ jobs:
           rm -rf build && mkdir build
           cmake -S . -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++
           cmake --build build --config Release -- -v
+
+      - name: Build with rustc compiler
+        if: matrix.language == 'rust'
+        shell: bash
+        env:
+          RUSTFLAGS: "-C debuginfo=2"
+        run: |
+          set -euo pipefail
+          if [[ -f Cargo.toml ]]; then
+            cargo build --locked --verbose
+          else
+            rustc -C debuginfo=2 -C opt-level=0 -o etl rust/etl.rs
+            ./etl --db world_data.db --table countries --csv countries.csv || true
+          fi
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
