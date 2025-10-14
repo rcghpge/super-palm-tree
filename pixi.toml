@@ -5,16 +5,23 @@ name = "super-palm-tree"
 platforms = ["linux-64", "linux-aarch64", "osx-arm64"]
 version = "0.1.0"
 
-[tasks]
-
 [dependencies]
 python = ">=3.14.0,<3.15"
 pandas = ">=2.3.3,<3"
 scikit-learn = ">=1.7.2,<2"
 numpy = ">=2.3.3,<3"
-mojo = ">=0.25.7.0.dev2025100705,<0.26"
-mojo-compiler = ">=0.25.7.0.dev2025100705,<0.26"
+mojo = ">=0.25.7.0.dev2025101305,<0.26"
+mojo-compiler = ">=0.25.7.0.dev2025101305,<0.26"
 cmake = ">=4.1.2,<5"
 jupyterlab = ">=4.4.9,<5"
 docker-cli = ">=28.3.1,<29"
 curl = ">=8.14.1,<9"
+rust = ">=1.90.0,<1.91"
+jq = ">=1.8.1,<2"
+sqlite = ">=3.50.4,<4"
+
+[tasks]
+build = "rustc -C opt-level=3 -o etl rust/etl.rs"
+etl = "pixi run build && ./etl --db world_data.db --table countries --csv countries.csv"
+clean = "rm -f etl world_data.db countries.csv countries.tmp.json"
+db = "sqlite3 world_data.db"
