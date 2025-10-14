@@ -13,3 +13,8 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 # Frameworks
 *.cu linguist-language=CUDA
 *.cuh linguist-language=CUDA
+
+# Test Git Attributes. wip
+c/** linguist-detectable
+cpp/** linguist-detectable
+test/** linguist-detectable
