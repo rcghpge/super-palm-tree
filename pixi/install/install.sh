@@ -1,4 +1,6 @@
 #!/bin/sh
+# Pixi from prefix.dev https://github.com/prefix-dev/pixi/install
+# https://prefix.dev/
 set -eu
 # Version: v0.55.0
 

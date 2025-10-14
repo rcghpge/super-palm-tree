@@ -18,6 +18,8 @@
     The default value is 'https://github.com/prefix-dev/pixi'. You can also specify it by
     setting the environment variable 'PIXI_REPOURL'.
 .LINK
+    https://prefix.dev/
+.LINK
     https://pixi.sh
 .LINK
     https://github.com/prefix-dev/pixi
