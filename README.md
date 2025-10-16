@@ -10,7 +10,7 @@
 </p>
 -->
 
-GitHub recommended the repository name. SPT repository 🌴
+GitHub recommended the repository name. SPT repository
 
 ---
 
