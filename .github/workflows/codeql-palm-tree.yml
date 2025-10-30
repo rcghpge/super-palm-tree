@@ -28,6 +28,8 @@ jobs:
             build-mode: none
           - language: rust
             build-mode: none
+          - language: go
+            build-mode: autobuild
 
     steps:
       - name: Checkout repository
@@ -36,6 +38,12 @@ jobs:
       - name: Set up Rust env (stable)
         if: matrix.language == 'rust'
         uses: dtolnay/rust-toolchain@stable
+
+      - name: Set up Go env
+        if: matrix.language == 'go'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
 
       - name: Set up compilers
         if: matrix.language == 'c-cpp'
