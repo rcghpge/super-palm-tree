@@ -3,22 +3,17 @@
 [![Palm Tree Code Scans](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql-palm-tree.yml/badge.svg)](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql-palm-tree.yml)
 
 <p align="center">
-  <img src="https://github.com/rcghpge/super-palm-tree/blob/main/src/assets/spt-logo-2.png?raw=true" width="50%" alt="p">
+  <img src="https://github.com/rcghpge/super-palm-tree/blob/main/src/assets/spt-logo-orange.png?raw=true" width="50%" alt="p">
 </p>
 
 <p align="center">
-  <strong>SPT repository</strong>
+  <strong>Build. Test. Build some more.</strong>
 </p>
-
----
-
-Runs on:
-- Mojo nightly releases
-- Rust stable releases 
 
 ---
 
 Testing:
+- Fortran
 - C
 - C++
 - CUDA
