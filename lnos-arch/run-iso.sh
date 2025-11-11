@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # run with sudo if needed
 set -euo pipefail
-: "${RAM:=4096}"
+: "${RAM:=8192}"
 : "${CPUS:=$(nproc)}"
 : "${DISK_SIZE:=30G}"
 : "${SECUREBOOT:=0}"
