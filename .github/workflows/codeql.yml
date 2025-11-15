@@ -1,4 +1,4 @@
-name: "Palm Tree Code Scans"
+name: "CodeQL"
 
 on:
   push:
