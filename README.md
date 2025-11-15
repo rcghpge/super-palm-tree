@@ -1,6 +1,6 @@
 # super-palm-tree
 
-[![Palm Tree Code Scans](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql-palm-tree.yml/badge.svg)](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql-palm-tree.yml)
+[![CodeQL](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql.yml/badge.svg)](https://github.com/rcghpge/super-palm-tree/actions/workflows/codeql.yml)
 
 <p align="center">
   <img src="https://github.com/rcghpge/super-palm-tree/blob/main/src/assets/spt-logo-orange.png?raw=true" width="50%" alt="p">
