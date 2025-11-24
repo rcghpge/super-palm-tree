@@ -68,6 +68,7 @@ out/
 *.qcow2
 *.iso
 *.fd
+*.c~
 
 # Distribution/packaging
 .Python
