@@ -1,0 +1,4 @@
+# test vim editor on parrot wsl
+
+
+editor runs seamslessly.
