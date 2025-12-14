@@ -25,6 +25,7 @@ Testing:
 - Pixi
 - Nushell
 - LnOS Arch
+- Parrot WSL
 
 ---
 
