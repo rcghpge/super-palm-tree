@@ -1,6 +1,7 @@
 
-# Scikit-learn in Mojo Example
 """
+Scikit-learn in Mojo Example
+
 This Scikit-Learn model is not fine-tuned or robustly built. It is an example prototype build for 
 ML/DL in the Mojo programming language.
 """
@@ -11,28 +12,28 @@ from python import Python, PythonObject
 
 
 fn generate_models() raises:
-    # Import Packages/Libraries
+    # Import and load the Iris dataset
     var pd = Python.import_module("pandas")
-    var sklearn_datasets = Python.import_module("sklearn.datasets")
-
-    # Load the Iris dataset
-    var iris = sklearn_datasets.load_iris()
-    var data = pd.DataFrame(data=iris["data"], columns=iris["feature_names"])
-    data["target"] = iris["target"]
-
-    # Display the first few rows of the dataset
-    print("Iris Dataset:")
-    print(data.head())
-    print()
+    var sklearn_datasets = Python.import_module("sklearn.datasets").load_iris()
 
     var sklearn_models = Python.import_module("sklearn.model_selection")
 
     # Split the data into training and testing sets
-    var X = data.drop("target", axis=1)
-    var y = data["target"]
+    var X = Python.evaluate("iris = __import__('sklearn.datasets').load_iris(); iris['data']")
+    var y = Python.evaluate("iris = __import__('sklearn.datasets').load_iris(); iris['target']")
+    var data = pd.DataFrame(data = X, columns = Python.evaluate(
+        "iris = __import__('sklearn.datasets').load_iris(); iris['feature_names']"
+    ))
+
+    # Check iris dataset
+    print("Iris Dataset:")
+    print(data.head())
+    print()
 
     var train_test_split = sklearn_models.train_test_split
-    var split_result = train_test_split(X, y, test_size=0.2, random_state=42)
+    var split_result = sklearn_models.train_test_split(
+        X, y, test_size = Python.evaluate("0.2"), random_state = Python.evaluate("42")
+    )   
 
     var X_train = split_result[0]
     var X_test = split_result[1]
@@ -97,19 +98,18 @@ fn generate_models() raises:
 
     # Define parameter grid
     # var pymax = Python.import_module("max.python").attr("Python")
-    var param_grid = Python.dict()
+    var param_grid = Python.evaluate(
+        "{'criterion': ['gini', 'entropy'], 'max_depth': [None, 10, 20, 30]}"
+    )
 
-    param_grid["criterion"] = Python.evaluate('["gini", "entropy"]')
-    param_grid["max_depth"] = Python.evaluate("[None, 10, 20, 30]")
-
-    # Initialize Decision Tree Model 3 with GridSearchCV
-    var model3 = dt2.DecisionTreeClassifier()
     var tune = grid_search.GridSearchCV(
-        dt2.DecisionTreeClassifier(), param_grid, cv=5
+        dt2.DecisionTreeClassifier(),
+        param_grid,
+        cv = Python.evaluate("5")
     )
 
     # Fine-tuning, training, and fitting the model with GridSearchCV
-    model3 = tune.fit(X_train, y_train)
+    var model3 = tune.fit(X_train, y_train)
 
     # Print the best parameters
     print("Hyperparameter Tuning:")
