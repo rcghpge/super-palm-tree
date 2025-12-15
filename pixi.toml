@@ -29,6 +29,8 @@ pip-audit = ">=2.10.0,<3"
 vim = ">=9.1.1858,<10"
 texinfo = ">=7.2,<8"
 fastfetch = ">=2.49.0,<3"
+bat = ">=0.26.1,<0.27"
+cowpy = ">=1.1.5,<2"
 
 [tasks]
 build = "rustc -C opt-level=3 -o etl rust/etl.rs"
@@ -36,5 +38,12 @@ etl = "pixi run build && ./etl --db world_data.db --table countries --csv countr
 clean = "rm -f etl world_data.db countries.csv countries.tmp.json"
 db = "sqlite3 world_data.db"
 
+[tasks.mojo]
+cmd = "MOJO_ENABLE_STACK_TRACE_ON_ERROR=1 mojo mojo/sklearn.mojo"
+
 [pypi-dependencies]
 emacs = ">=24.1.50.1.post20120610, <25"
+cowsay = ">=6.1, <7"
+
+[activation.env]
+MOJO_ENABLE_STACK_TRACE_ON_ERROR = "1"

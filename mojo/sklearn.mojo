@@ -1,6 +1,6 @@
 
 """
-Scikit-learn in Mojo Example
+Scikit-Learn in Mojo
 
 This Scikit-Learn model is not fine-tuned or robustly built. It is an example prototype build for 
 ML/DL in the Mojo programming language.
@@ -15,7 +15,6 @@ fn generate_models() raises:
     # Import and load the Iris dataset
     var pd = Python.import_module("pandas")
     var sklearn_datasets = Python.import_module("sklearn.datasets").load_iris()
-
     var sklearn_models = Python.import_module("sklearn.model_selection")
 
     # Split the data into training and testing sets
@@ -30,10 +29,10 @@ fn generate_models() raises:
     print(data.head())
     print()
 
+    var test_size = Python.evaluate("0.2")
+    var random_state = Python.evaluate("42")
     var train_test_split = sklearn_models.train_test_split
-    var split_result = sklearn_models.train_test_split(
-        X, y, test_size = Python.evaluate("0.2"), random_state = Python.evaluate("42")
-    )   
+    var split_result = sklearn_models.train_test_split(X, y, test_size, random_state)   
 
     var X_train = split_result[0]
     var X_test = split_result[1]
