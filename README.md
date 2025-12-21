@@ -24,7 +24,7 @@ Testing:
 - Zig
 - Pixi
 - Nushell
-- LnOS Arch
+- LnOS Arch Edition
 - Parrot WSL
 
 ---
