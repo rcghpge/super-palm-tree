@@ -12,23 +12,6 @@
 
 ---
 
-Testing:
-- Fortran
-- C
-- C++
-- CUDA
-- Go
-- Python
-- Mojo
-- Rust
-- Zig
-- Pixi
-- Nushell
-- LnOS Arch Edition
-- Parrot WSL
-
----
-
 MIT License
 
 ---
