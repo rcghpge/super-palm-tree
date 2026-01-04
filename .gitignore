@@ -269,8 +269,8 @@ target
 #.idea/
 
 # FreeBSD
-i386/
-x86/
+i386
+x86
 machine
 export_syms
 opt_global.h
