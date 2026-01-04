@@ -64,6 +64,7 @@ __pycache__/
 
 # Builds, outputs, and artifacts
 build/
+logs/
 out/
 *.cow
 *.qcow2
@@ -170,7 +171,7 @@ ipython_config.py
 # PEP 582
 __pypackages__/
 
-# Celery stuff
+# Celery
 celerybeat-schedule
 celerybeat.pid
 
@@ -266,3 +267,11 @@ target
 
 # RustRover
 #.idea/
+
+# FreeBSD
+i386/
+x86/
+machine
+export_syms
+opt_global.h
+
