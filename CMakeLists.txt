@@ -12,6 +12,7 @@ cmake_minimum_required(VERSION 3.10)
 #add_executable(yee test/yee.c)
 #add_executable(yawp test/yawp.cpp)
 #add_executable(spinner c/spinner.c)
+#add_executable(kmod freebsd/kmod.c)
 
 #cmake_minimum_required(VERSION 3.10)
 
