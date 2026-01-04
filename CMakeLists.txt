@@ -82,11 +82,13 @@ install(TARGETS abi
 add_executable(yee     test/yee.c)
 add_executable(yawp    test/yawp.cpp)
 add_executable(spinner c/spinner.c)
+add_executable(kmod freebsd/kmod.c)
 
 # Headers from cpp/include if needed later, uncomment:
 # target_include_directories(yee PRIVATE "${ABI_PUBLIC_INCLUDE_DIR}")
 # target_include_directories(yawp PRIVATE "${ABI_PUBLIC_INCLUDE_DIR}")
 # target_include_directories(spinner PRIVATE "${ABI_PUBLIC_INCLUDE_DIR}")
+# target_include_directories(kmod PRIVATE "${ABI_PUBLIC_INCLUDE_DIR}")
 
 # ---- Helper targets (fixed arg spacing) ----
 find_program(PYTHON_EXECUTABLE NAMES python3 python)
@@ -137,4 +139,17 @@ if(MOJO_EXECUTABLE)
     WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
     COMMENT "Running Mojo ABI test"
   )
+
+if(CMAKE_SYSTEM_NAME MATCHES "FreeBSD")
+  find_program(GMAKE NAMES gmake make)
+  if(GMAKE)
+    add_custom_target(kmod
+      COMMAND ${CMAKE_COMMAND} -E env CC=clang CXX=clang++
+              ${GMAKE} -C freebsd clean && ${GMAKE} -C freebsd
+      WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+      COMMENT "Building FreeBSD KLD (for analysis)"
+      SOURCES freebsd/kmod.c freebsd/Makefile 
+      VERBATIM
+    )
+  endif()
 endif()
