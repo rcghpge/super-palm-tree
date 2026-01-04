@@ -34,7 +34,9 @@ skel_loader(struct module *m, int what, void *arg)
 	return(err);
 }
 
-/* Declare this module to the rest of the kernel */
+/* 
+ *Declare this module to the rest of the kernel */
+*/
 
 static moduledata_t skel_mod = {
 	"skel",
