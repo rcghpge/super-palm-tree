@@ -12,7 +12,6 @@ cmake_minimum_required(VERSION 3.10)
 #add_executable(yee test/yee.c)
 #add_executable(yawp test/yawp.cpp)
 #add_executable(spinner c/spinner.c)
-#add_executable(kmod freebsd/kmod.c)
 
 #cmake_minimum_required(VERSION 3.10)
 
@@ -82,7 +81,6 @@ install(TARGETS abi
 add_executable(yee     test/yee.c)
 add_executable(yawp    test/yawp.cpp)
 add_executable(spinner c/spinner.c)
-add_executable(kmod freebsd/kmod.c)
 
 # Headers from cpp/include if needed later, uncomment:
 # target_include_directories(yee PRIVATE "${ABI_PUBLIC_INCLUDE_DIR}")
@@ -139,17 +137,25 @@ if(MOJO_EXECUTABLE)
     WORKING_DIRECTORY "${CMAKE_SOURCE_DIR}"
     COMMENT "Running Mojo ABI test"
   )
+endif()
 
 if(CMAKE_SYSTEM_NAME MATCHES "FreeBSD")
   find_program(GMAKE NAMES gmake make)
   if(GMAKE)
     add_custom_target(kmod
-      COMMAND ${CMAKE_COMMAND} -E env CC=clang CXX=clang++
-              ${GMAKE} -C freebsd clean && ${GMAKE} -C freebsd
+      COMMAND ${CMAKE_COMMAND} -E env "CC=clang" "CXX=clang++" ${GMAKE} -C freebsd clean
+      COMMAND ${CMAKE_COMMAND} -E env "CC=clang" "CXX=clang++" ${GMAKE} -C freebsd
       WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
       COMMENT "Building FreeBSD KLD (for analysis)"
-      SOURCES freebsd/kmod.c freebsd/Makefile 
+      SOURCES freebsd/kmod.c freebsd/Makefile
       VERBATIM
     )
   endif()
 endif()
+
+enable_testing()
+add_test(NAME user_space COMMAND ctest --output-on-failure)
+add_test(NAME kmod_freebsd COMMAND ${CMAKE_COMMAND} --build . --target kmod
+         WORKING_DIRECTORY ${CMAKE_BINARY_DIR}  # Run FreeBSD builds
+         CONFIGURATIONS FreeBSD)  # skip non-FreeBSD builds
+
