@@ -275,3 +275,5 @@ machine
 export_syms
 opt_global.h
 
+# Fortran
+flang/
