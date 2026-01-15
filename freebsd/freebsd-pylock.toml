@@ -1,0 +1,339 @@
+lock-version = "1.0"
+created-by = "pip"
+
+[[packages]]
+name = "absl-py"
+version = "2.3.1"
+
+[[packages.wheels]]
+name = "absl_py-2.3.1-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/8f/aa/ba0014cc4659328dc818a28827be78e6d97312ab0cb98105a770924dc11e/absl_py-2.3.1-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "eeecf07f0c2a93ace0772c92e596ace6d3d3996c042b2128459aaae2a76de11d"
+
+[[packages]]
+name = "contourpy"
+version = "1.3.3"
+
+[packages.sdist]
+name = "contourpy-1.3.3.tar.gz"
+url = "https://files.pythonhosted.org/packages/58/01/1253e6698a07380cd31a736d248a3f2a50a7c88779a1813da27503cadc2a/contourpy-1.3.3.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "083e12155b210502d0bca491432bb04d56dc3432f95a979b429f2848c3dbe880"
+
+[[packages]]
+name = "cycler"
+version = "0.12.1"
+
+[[packages.wheels]]
+name = "cycler-0.12.1-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30"
+
+[[packages]]
+name = "fonttools"
+version = "4.61.1"
+
+[[packages.wheels]]
+name = "fonttools-4.61.1-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/c7/4e/ce75a57ff3aebf6fc1f4e9d508b8e5810618a33d900ad6c19eb30b290b97/fonttools-4.61.1-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "17d2bf5d541add43822bcf0c43d7d847b160c9bb01d15d5007d84e2217aaa371"
+
+[[packages]]
+name = "h5py"
+version = "3.15.1"
+
+[packages.sdist]
+name = "h5py-3.15.1.tar.gz"
+url = "https://files.pythonhosted.org/packages/4d/6a/0d79de0b025aa85dc8864de8e97659c94cf3d23148394a954dc5ca52f8c8/h5py-3.15.1.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "c86e3ed45c4473564de55aa83b6fc9e5ead86578773dfbd93047380042e26b69"
+
+[[packages]]
+name = "joblib"
+version = "1.5.3"
+
+[[packages.wheels]]
+name = "joblib-1.5.3-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/7b/91/984aca2ec129e2757d1e4e3c81c3fcda9d0f85b74670a094cc443d9ee949/joblib-1.5.3-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "5fc3c5039fc5ca8c0276333a188bbd59d6b7ab37fe6632daa76bc7f9ec18e713"
+
+[[packages]]
+name = "keras"
+version = "3.13.1"
+
+[[packages.wheels]]
+name = "keras-3.13.1-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/d8/e5/8b40bada1f33f25deca7bad0e8c7ca6752f2b09e8018e2fc4693858dd662/keras-3.13.1-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "6593be2e9d057921cd0413b4552c05fe1df73ea4bb03a4f3ec94532077b3e508"
+
+[[packages]]
+name = "kiwisolver"
+version = "1.4.9"
+
+[packages.sdist]
+name = "kiwisolver-1.4.9.tar.gz"
+url = "https://files.pythonhosted.org/packages/5c/3c/85844f1b0feb11ee581ac23fe5fce65cd049a200c1446708cc1b7f922875/kiwisolver-1.4.9.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "c3b22c26c6fd6811b0ae8363b95ca8ce4ea3c202d3d0975b2914310ceb1bcc4d"
+
+[[packages]]
+name = "markdown-it-py"
+version = "4.0.0"
+
+[[packages.wheels]]
+name = "markdown_it_py-4.0.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/94/54/e7d793b573f298e1c9013b8c4dade17d481164aa517d1d7148619c2cedbf/markdown_it_py-4.0.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "87327c59b172c5011896038353a81343b6754500a08cd7a4973bb48c6d578147"
+
+[[packages]]
+name = "matplotlib"
+version = "3.10.8"
+
+[packages.sdist]
+name = "matplotlib-3.10.8.tar.gz"
+url = "https://files.pythonhosted.org/packages/8a/76/d3c6e3a13fe484ebe7718d14e269c9569c4eb0020a968a327acb3b9a8fe6/matplotlib-3.10.8.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "2299372c19d56bcd35cf05a2738308758d32b9eaed2371898d8f5bd33f084aa3"
+
+[[packages]]
+name = "mdurl"
+version = "0.1.2"
+
+[[packages.wheels]]
+name = "mdurl-0.1.2-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8"
+
+[[packages]]
+name = "ml-dtypes"
+version = "0.5.4"
+
+[packages.sdist]
+name = "ml_dtypes-0.5.4.tar.gz"
+url = "https://files.pythonhosted.org/packages/0e/4a/c27b42ed9b1c7d13d9ba8b6905dece787d6259152f2309338aed29b2447b/ml_dtypes-0.5.4.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "8ab06a50fb9bf9666dd0fe5dfb4676fa2b0ac0f31ecff72a6c3af8e22c063453"
+
+[[packages]]
+name = "namex"
+version = "0.1.0"
+
+[[packages.wheels]]
+name = "namex-0.1.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/b2/bc/465daf1de06409cdd4532082806770ee0d8d7df434da79c76564d0f69741/namex-0.1.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "e2012a474502f1e2251267062aae3114611f07df4224b6e06334c57b0f2ce87c"
+
+[[packages]]
+name = "numpy"
+version = "2.4.1"
+
+[packages.sdist]
+name = "numpy-2.4.1.tar.gz"
+url = "https://files.pythonhosted.org/packages/24/62/ae72ff66c0f1fd959925b4c11f8c2dea61f47f6acaea75a08512cdfe3fed/numpy-2.4.1.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "a1ceafc5042451a858231588a104093474c6a5c57dcc724841f5c888d237d690"
+
+[[packages]]
+name = "optree"
+version = "0.18.0"
+
+[packages.sdist]
+name = "optree-0.18.0.tar.gz"
+url = "https://files.pythonhosted.org/packages/83/8e/09d899ad531d50b79aa24e7558f604980fe4048350172e643bb1b9983aec/optree-0.18.0.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "3804fb6ddc923855db2dc4805b4524c66e00f1ef30b166be4aadd52822b13e06"
+
+[[packages]]
+name = "packaging"
+version = "25.0"
+
+[[packages.wheels]]
+name = "packaging-25.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/20/12/38679034af332785aac8774540895e234f4d07f7545804097de4b666afd8/packaging-25.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"
+
+[[packages]]
+name = "pandas"
+version = "2.3.3"
+
+[packages.sdist]
+name = "pandas-2.3.3.tar.gz"
+url = "https://files.pythonhosted.org/packages/33/01/d40b85317f86cf08d853a4f495195c73815fdf205eef3993821720274518/pandas-2.3.3.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "e05e1af93b977f7eafa636d043f9f94c7ee3ac81af99c13508215942e64c993b"
+
+[[packages]]
+name = "pillow"
+version = "12.1.0"
+
+[packages.sdist]
+name = "pillow-12.1.0.tar.gz"
+url = "https://files.pythonhosted.org/packages/d0/02/d52c733a2452ef1ffcc123b68e6606d07276b0e358db70eabad7e40042b7/pillow-12.1.0.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "5c5ae0a06e9ea030ab786b0251b32c7e4ce10e58d983c0d5c56029455180b5b9"
+
+[[packages]]
+name = "pygments"
+version = "2.19.2"
+
+[[packages.wheels]]
+name = "pygments-2.19.2-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/c7/21/705964c7812476f378728bdf590ca4b771ec72385c533964653c68e86bdc/pygments-2.19.2-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "86540386c03d588bb81d44bc3928634ff26449851e99741617ecb9037ee5ec0b"
+
+[[packages]]
+name = "pyparsing"
+version = "3.3.1"
+
+[[packages.wheels]]
+name = "pyparsing-3.3.1-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/8b/40/2614036cdd416452f5bf98ec037f38a1afb17f327cb8e6b652d4729e0af8/pyparsing-3.3.1-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "023b5e7e5520ad96642e2c6db4cb683d3970bd640cdf7115049a6e9c3682df82"
+
+[[packages]]
+name = "python-dateutil"
+version = "2.9.0.post0"
+
+[[packages.wheels]]
+name = "python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+
+[[packages]]
+name = "pytz"
+version = "2025.2"
+
+[[packages.wheels]]
+name = "pytz-2025.2-py2.py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00"
+
+[[packages]]
+name = "rich"
+version = "14.2.0"
+
+[[packages.wheels]]
+name = "rich-14.2.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/25/7a/b0178788f8dc6cafce37a212c99565fa1fe7872c70c6c9c1e1a372d9d88f/rich-14.2.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "76bc51fe2e57d2b1be1f96c524b890b816e334ab4c1e45888799bfaab0021edd"
+
+[[packages]]
+name = "scikit-learn"
+version = "1.8.0"
+
+[packages.sdist]
+name = "scikit_learn-1.8.0.tar.gz"
+url = "https://files.pythonhosted.org/packages/0e/d4/40988bf3b8e34feec1d0e6a051446b1f66225f8529b9309becaeef62b6c4/scikit_learn-1.8.0.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "9bccbb3b40e3de10351f8f5068e105d0f4083b1a65fa07b6634fbc401a6287fd"
+
+[[packages]]
+name = "scipy"
+version = "1.17.0"
+
+[packages.sdist]
+name = "scipy-1.17.0.tar.gz"
+url = "https://files.pythonhosted.org/packages/56/3e/9cca699f3486ce6bc12ff46dc2031f1ec8eb9ccc9a320fdaf925f1417426/scipy-1.17.0.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "2591060c8e648d8b96439e111ac41fd8342fdeff1876be2e19dea3fe8930454e"
+
+[[packages]]
+name = "six"
+version = "1.17.0"
+
+[[packages.wheels]]
+name = "six-1.17.0-py2.py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274"
+
+[[packages]]
+name = "super-palm-tree"
+
+[packages.directory]
+path = "."
+editable = true
+
+[[packages]]
+name = "threadpoolctl"
+version = "3.6.0"
+
+[[packages.wheels]]
+name = "threadpoolctl-3.6.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb"
+
+[[packages]]
+name = "typing-extensions"
+version = "4.15.0"
+
+[[packages.wheels]]
+name = "typing_extensions-4.15.0-py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/18/67/36e9267722cc04a6b9f15c7f3441c2363321a3ea07da7ae0c0707beb2a9c/typing_extensions-4.15.0-py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "f0fa19c6845758ab08074a0cfa8b7aecb71c999ca73d62883bc25cc018c4e548"
+
+[[packages]]
+name = "tzdata"
+version = "2025.3"
+
+[[packages.wheels]]
+name = "tzdata-2025.3-py2.py3-none-any.whl"
+url = "https://files.pythonhosted.org/packages/c7/b0/003792df09decd6849a5e39c28b513c06e84436a54440380862b5aeff25d/tzdata-2025.3-py2.py3-none-any.whl"
+
+[packages.wheels.hashes]
+sha256 = "06a47e5700f3081aab02b2e513160914ff0694bce9947d6b76ebd6bf57cfc5d1"
+
+[[packages]]
+name = "xgboost"
+version = "3.1.3"
+
+[packages.sdist]
+name = "xgboost-3.1.3.tar.gz"
+url = "https://files.pythonhosted.org/packages/42/db/ff3eb8ff8cdf87a57cbb0f484234b4353178587236c4c84c1d307165c1f8/xgboost-3.1.3.tar.gz"
+
+[packages.sdist.hashes]
+sha256 = "0aeaa59d7ba09221a6fa75f70406751cfafdf3f149d0a91b197a1360404a28f3"
