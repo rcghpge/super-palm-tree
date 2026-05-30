@@ -1,7 +1,7 @@
 # SCM syntax highlighting & preventing 3-way merges
 pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 
-# Programming languages
+# Programming languages and Shell
 #*.c linguist-language=C
 #*.h linguist-language=C
 #*.cpp linguist-language=C++
@@ -9,6 +9,17 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 *.py linguist-language=Python
 #*.mojo linguist-language=Mojo
 #*.rs linguist-language=Rust
+
+*.c linguist-detectable=false
+*.h linguist-detectable=false
+*.cpp linguist-detectable=false
+*.hpp linguist-detable=false
+*.mojo linguist-detectable=false
+*.rs linguist-detectable=false
+*.cu linguist-detectable=false
+*.cuh linguist-detectable=false
+*.ps1 linguist-detectable=false
+*.sh linguist-detectable=false
 
 # Frameworks
 #*.cu linguist-language=CUDA
