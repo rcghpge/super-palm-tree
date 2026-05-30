@@ -2,6 +2,7 @@
 pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 
 # Programming languages and Shell
+#*.go linguist-language=Go
 #*.c linguist-language=C
 #*.h linguist-language=C
 #*.cpp linguist-language=C++
@@ -9,19 +10,8 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 *.py linguist-language=Python
 #*.mojo linguist-language=Mojo
 #*.rs linguist-language=Rust
-
-*.c linguist-detectable=false
-*.h linguist-detectable=false
-*.cpp linguist-detectable=false
-*.hpp linguist-detable=false
-*.mojo linguist-detectable=false
-*.rs linguist-detectable=false
-*.cu linguist-detectable=false
-*.cuh linguist-detectable=false
-*.ps1 linguist-detectable=false
-*.sh linguist-detectable=false
-
-# Frameworks
+#*.zig linguist-language=Zig
+#*.f90 linguist-language=Fortran
 #*.cu linguist-language=CUDA
 #*.cuh linguist-language=CUDA
 
@@ -29,3 +19,17 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 #c/** linguist-detectable
 #cpp/** linguist-detectable
 #test/** linguist-detectable
+
+*.go linguist-detectable=false
+*.c linguist-detectable=false
+*.h linguist-detectable=false
+*.cpp linguist-detectable=false
+*.hpp linguist-detable=false
+*.mojo linguist-detectable=false
+*.rs linguist-detectable=false
+*.zig linguist-detectable=false
+*.f90 linguist-detectable=false
+*.cu linguist-detectable=false
+*.cuh linguist-detectable=false
+*.ps1 linguist-detectable=false
+*.sh linguist-detectable=false
