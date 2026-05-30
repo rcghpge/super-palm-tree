@@ -2,19 +2,19 @@
 pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 
 # Programming languages
-*.c linguist-language=C
-*.h linguist-language=C
-*.cpp linguist-language=C++
-*.hpp linguist-language=C++
+#*.c linguist-language=C
+#*.h linguist-language=C
+#*.cpp linguist-language=C++
+#*.hpp linguist-language=C++
 *.py linguist-language=Python
-*.mojo linguist-language=Mojo
-*.rs linguist-language=Rust
+#*.mojo linguist-language=Mojo
+#*.rs linguist-language=Rust
 
 # Frameworks
-*.cu linguist-language=CUDA
-*.cuh linguist-language=CUDA
+#*.cu linguist-language=CUDA
+#*.cuh linguist-language=CUDA
 
 # Test Git Attributes. wip
-c/** linguist-detectable
-cpp/** linguist-detectable
-test/** linguist-detectable
+#c/** linguist-detectable
+#cpp/** linguist-detectable
+#test/** linguist-detectable

@@ -1,4 +1,4 @@
 # Test Mojo lang in vim editor
 
-fn main():
+def main():
     print("yuh\n")
