@@ -35,3 +35,6 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 *.ps1 linguist-detectable=false
 *.sh linguist-detectable=false
 *.nu linguist-detectable=false
+*Dockerfile linguist-detectable=false
+*Makefile linguist-detectable=false
+*CMakeLists.txt linguist-detectable=false
