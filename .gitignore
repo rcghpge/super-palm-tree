@@ -66,6 +66,7 @@ __pycache__/
 build/
 logs/
 out/
+*.bak
 *.cow
 *.qcow2
 *.iso
@@ -129,7 +130,7 @@ db.sqlite3-journal
 instance/
 .webassets-cache
 
-# Scrapy stuff:
+# Scrapy
 .scrapy
 
 # Sphinx documentation
@@ -155,7 +156,7 @@ ipython_config.py
 # uv
 # uv.lock
 
-# poetry
+# Poetry
 # poetry.lock
 # poetry.toml
 
@@ -165,7 +166,7 @@ ipython_config.py
 .pdm-python
 .pdm-build/
 
-# pixi
+# Pixi
 .pixi
 
 # PEP 582
@@ -248,7 +249,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# pixi environments
+# Pixi environments
 .pixi/*
 !.pixi/config.toml
 
@@ -277,3 +278,6 @@ opt_global.h
 
 # Fortran
 flang/
+
+# wip
+security/
