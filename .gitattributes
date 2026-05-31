@@ -16,10 +16,12 @@ pixi.lock merge=binary linguist-language=YAML linguist-generated=true
 #*.cuh linguist-language=CUDA
 #*.nu linguist-language=Nu
 
-# Test Git Attributes. wip
-#c/** linguist-detectable
-#cpp/** linguist-detectable
-#test/** linguist-detectable
+# Test Git Attributes
+freebsd/** linguist-detectable=false
+lnos-arch/** linguist-detectable=false
+#c/** linguist-detectable=false
+#cpp/** linguist-detectable=false
+#test/** linguist-detectable=false
 
 *.go linguist-detectable=false
 *.c linguist-detectable=false
