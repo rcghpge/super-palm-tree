@@ -72,6 +72,7 @@ out/
 *.iso
 *.fd
 *.c~
+*.sh~
 
 # Distribution/packaging
 .Python
@@ -280,4 +281,5 @@ opt_global.h
 flang/
 
 # wip
+triton/
 security/
