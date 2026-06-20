@@ -64,6 +64,9 @@ __pycache__/
 
 # Builds, outputs, and artifacts
 python/dev/
+triton/
+flang/
+security/
 build/
 logs/
 out/
@@ -72,6 +75,7 @@ out/
 *.qcow2
 *.iso
 *.fd
+*.py~
 *.c~
 *.sh~
 
@@ -278,9 +282,5 @@ machine
 export_syms
 opt_global.h
 
-# Fortran
-flang/
 
-# wip
-triton/
-security/
+
