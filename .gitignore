@@ -63,6 +63,7 @@ __pycache__/
 *.so
 
 # Builds, outputs, and artifacts
+python/dev/
 build/
 logs/
 out/

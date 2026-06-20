@@ -4,4 +4,5 @@
 
 set -eu
 
+pixi self-update
 pixi update && pixi upgrade
